@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utility classes */
+
+/* Primary button styles */
+.btn-primary {
+  @apply px-4 py-2 text-xs md:text-base rounded-md bg-stone-700 text-stone-400 hover:bg-stone-600 hover:text-stone-100;
+}
+
+/* Primary input styles */
+.input-primary {
+    @apply w-full p-1 border-b-2 rounded-sm border-stone-300 bg-stone-200 text-stone-600 focus:outline-none focus:border-stone-600;
+    @apply dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100;
+  }  
+
+/* Header styles for modals or section headers */
+.header-primary {
+  @apply text-xl font-bold text-stone-700 my-4 dark:text-white;
+}
+
+.text-subtle {
+  @apply text-stone-600 mb-4 dark:text-gray-400;
+}
+
+/* Sidebar project button */
+.sidebar-project-button {
+  @apply w-full text-left px-2 py-1 rounded-sm my-1 text-stone-400 hover:text-stone-200 hover:bg-stone-800;
+}
+
+/* Sidebar selected project button */
+.sidebar-project-button-selected {
+  @apply bg-stone-800 text-stone-200;
+}
+
+/* Light/Dark mode utility styles */
+
+/* Dark mode background and text color styles */
+.dark-mode-bg {
+  @apply bg-gray-900 text-white;
+}
+
+/* Light mode background and text color styles */
+.light-mode-bg {
+  @apply bg-white text-gray-900;
+}
+
+/* Light and dark mode button toggle */
+.theme-toggle {
+  @apply px-4 py-2 text-sm rounded-md border transition-colors duration-300;
+}
+
+.theme-toggle:hover {
+  @apply border-gray-400 bg-gray-300 dark:border-gray-600 dark:bg-gray-800;
+}
+
+/* Container styles for transition between light and dark modes */
+.theme-transition {
+  @apply transition-colors duration-300;
+}
+
+.task-box {
+    @apply bg-stone-100 text-stone-700 rounded-md p-4 my-2;
+    @apply dark:bg-gray-800 dark:text-gray-100;
+  }
+
